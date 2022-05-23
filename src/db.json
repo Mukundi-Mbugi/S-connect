@@ -1,0 +1,26 @@
+{
+    "students": [
+      {
+        "id": 1,
+        "firstName": "Joy",
+        "lastName": "Juliet",
+        "mobile": "0712345678",
+        "email": "joyjuliet@gmail.com",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxIOZiKjev-4fXNYuUloWMDtEamQCvBzH8HQ&usqp=CAU"
+      },
+      {
+        "id": 2,
+        "firstName": "Hussein",
+        "lastName": "Tuna",
+        "mobile": "0787654321",
+        "email": "tunahusin@gmail.com",
+        "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRRvH3YJaAjksIvQViPTx_o4EOcMfrqg4XHg&usqp=CAU"
+      },
+      {
+        "title": "Third Article",
+        "content": "Another example!",
+        "id": 3
+      }
+    ]
+  }
+  

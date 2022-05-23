@@ -1,13 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;400;500;600;700;800&display=swap');
+
 .form{
+    text-align: center;
     display: flex;
     flex-direction: column;
-    width: auto;
-    padding: 5px 2px;
-    margin: 2px;
-    width: 100%;
+    height: auto;
     align-items: center;
-    justify-content: space-evenly;
-    font-family: 'Nunito Sans', sans-serif;
+    text-align: start;
+    margin: 10px;
     
+}
+.form label{
+    color: blueviolet;
+    display: block;
+    margin: 2px;
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.form-control input{
+    width: 80%;
+    border: 1px solid;
+}
+.form-control button{
+    margin-top: 5px;
+    padding: 2px 5px;
+    font-size: 16px;
+    align-items: center;
+    width: 80%;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-control button:focus{
+    border: none;
+    color: purple;
 }

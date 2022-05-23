@@ -1,12 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: rgb(234, 234, 234);
+}
 
 .body{
     font-family: 'Nunito', sans-serif;
-font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .leaflet-container{
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
+    
 }

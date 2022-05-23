@@ -3,7 +3,7 @@ import "../App.css";
 import Popup from "./PopupBox";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
-function Map({ lat, long }) {
+function Map({lat, long}) {
   return (
     <MapContainer
       center={[-1.30006,36.78229]}

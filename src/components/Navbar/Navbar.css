@@ -4,17 +4,26 @@
 font-family: 'Nunito', sans-serif;
 font-family: 'Nunito Sans', sans-serif;
 }
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
 .navbar ul{
     font-family: 'Nunito Sans', sans-serif;
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    padding: 10px 30px;
+    
+ 
 }
 .navbar ul a{
     text-decoration: none;
     margin-left: 10px;
-}
-.navbar ul li{
-    color: purple;
+    color: blueviolet;
+    font-weight: 400;
+    
 }
