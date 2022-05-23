@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import Popup from "./PopupBox";
 import { MapContainer, TileLayer, Marker } from "react-leaflet";
 
