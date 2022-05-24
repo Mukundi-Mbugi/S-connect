@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Form from "./Form/Form";
-// import Map from "./Map";
 import Navbar from "./Navbar/Navbar";
 
 function App() {
@@ -8,12 +7,14 @@ function App() {
     latitude: "",
     longitude: "",
   });
+  
 
   useEffect(()=>{
     const getLocation = ()=>{
-    
+      
       navigator.geolocation.getCurrentPosition(
        (location) => {
+         if (location.coords.latitude.length!=="")
          setUserLocation({
            
              latitude: location.coords.latitude,
@@ -28,7 +29,7 @@ function App() {
     getLocation() 
   },[])
   
-  
+  console.log(userLocation);
 
   return (
     <div>
