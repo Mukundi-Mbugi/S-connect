@@ -1,20 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Form.css";
 import Map from "../Map";
 
 function Form({ lat, long }) {
+  const [students, setStudents] = useState([])
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     mobile: "",
     email: "",
-    image: "",
+    avatar: "",
     latitude: lat ,
     longitude: long ,
     
   });
   const [newFormData, setNewFormData]=useState([])
   
+  useEffect(()=>{
+    fetch("http://localhost:3000/students")
+    .then(res=>res.json())
+    .then(students=>setStudents(students))
+  },[])
 
   function handleChange(event) {
     const {name,value} = event.target;
@@ -33,7 +39,19 @@ function Form({ lat, long }) {
       longitude:long
     }
     setNewFormData(newFormData)
-    console.log(newFormData);
+    
+  
+  
+    
+    fetch("http://localhost:3000/students",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body: JSON.stringify(newFormData)
+    })
+    .then(res=>res.json())
+    .then((data)=>{
+      setStudents([...students, data])
+    })
   }
  
   
@@ -94,7 +112,7 @@ function Form({ lat, long }) {
         <button>Submit</button>
       </form>
     </div>
-    <Map lat={lat} long={long} studentData={formData}/>
+    <Map students={students}/>
     </>
   );
 }

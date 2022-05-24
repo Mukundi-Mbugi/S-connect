@@ -19,6 +19,26 @@
       "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxIOZiKjev-4fXNYuUloWMDtEamQCvBzH8HQ&usqp=CAU",
       "latitude": "-1.278183",
       "longitude": "36.813053"
+    },
+    {
+      "firstName": "Matthew",
+      "lastName": "Mutuku",
+      "mobile": "0789456321",
+      "email": "mutukumathew@gmail.com",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjTVdw9D6gAE4d2RwkyD7rQ_g2RLve9qLLd1VU-654b_JbNBa_lzmNNjcF77myP31bavI&usqp=CAU",
+      "latitude": -1.3034532,
+      "longitude": 36.7927116,
+      "id": 3
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Bulimu",
+      "mobile": "0713456711",
+      "email": "bulimujane@gmail.com",
+      "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3KyhVkbk6JSquDw6uOnaLY4uuL4KvWUoQGg&usqp=CAU",
+      "latitude": -1.3034532,
+      "longitude": 36.7927116,
+      "id": 4
     }
   ]
 }

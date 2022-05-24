@@ -40,8 +40,6 @@ function App() {
         lat={userLocation.latitude}
         long={userLocation.longitude}
       />
-      {/* <Map /> */}
-      {/* <Map lat={userLocation.coordinates.latitude} long={userLocation.coordinates.longitude} /> */}
     </div>
   );
 }

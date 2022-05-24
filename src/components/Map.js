@@ -3,13 +3,7 @@ import "../App.css";
 import { MapContainer, TileLayer} from "react-leaflet";
 import MarkerIcon from "./MarkerIcon";
 
-function Map({lat,long}) {
-  const [students, setStudents] = useState([])
-  useEffect(()=>{
-    fetch("http://localhost:3000/students")
-    .then(res=>res.json())
-    .then(students=>setStudents(students))
-  },[])
+function Map({students}) {
   
   return (
     <MapContainer center={[-1.3034532, 36.7927116]} zoom={13} scrollWheelZoom={true}>

@@ -32,4 +32,7 @@
     
     justify-content: center;
     align-items: center;
+    height: auto;
+    width: 30vh;
+    color: blueviolet;
 }
