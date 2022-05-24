@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Form from "./Form/Form";
+import Home from "./Home";
 import Navbar from "./Navbar/Navbar";
+
 
 function App() {
   const [userLocation, setUserLocation] = useState({
@@ -33,9 +35,8 @@ function App() {
 
   return (
     <div>
-      <Navbar
-        
-      />
+      <Navbar />
+      <Home />
       <Form
         lat={userLocation.latitude}
         long={userLocation.longitude}

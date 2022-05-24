@@ -4,8 +4,9 @@ import { Marker, Popup} from "react-leaflet";
 
 
 function MarkerIcon({ students }) {
+    
     function handleDelete(){
-        console.log("Don't delete");
+        console.log("deleted");
     }
    
   return (

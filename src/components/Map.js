@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from "react";
 import "../App.css";
 import { MapContainer, TileLayer} from "react-leaflet";
 import MarkerIcon from "./MarkerIcon";
