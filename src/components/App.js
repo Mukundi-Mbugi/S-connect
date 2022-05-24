@@ -1,39 +1,46 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Form from "./Form/Form";
-import Map from "./Map";
+// import Map from "./Map";
 import Navbar from "./Navbar/Navbar";
-
 
 function App() {
   const [userLocation, setUserLocation] = useState({
-    loaded :false,
-    coordinates:{latitude:"",longitude:""}
-  })
+    latitude: "",
+    longitude: "",
+  });
 
-  const onSuccess = location=>{
-    setUserLocation({
-      loaded:true,
-      coordinates:{
-        latitude :location.coords.latitude,
-        longitude:location.coords.longitude
-      }
-    })
-    console.log(location);
-  }
-  const onError =()=>alert("Could not get your location")  
   useEffect(()=>{
-    if(navigator.geolocation)
-  navigator.geolocation.getCurrentPosition(onSuccess,  onError)
+    const getLocation = ()=>{
+    
+      navigator.geolocation.getCurrentPosition(
+       (location) => {
+         setUserLocation({
+           
+             latitude: location.coords.latitude,
+             longitude: location.coords.longitude,
+           
+         });
+         // console.log(location.coords.latitude);
+       },
+       (error) => console.log(error)
+     );
+    }
+    getLocation() 
   },[])
   
   
 
-  
   return (
     <div>
-      <Navbar lat={userLocation.coordinates.latitude} long={userLocation.coordinates.longitude}/>
-      <Form lat={userLocation.coordinates.latitude} long={userLocation.coordinates.longitude}/>
-      <Map lat={userLocation.coordinates.latitude} long={userLocation.coordinates.longitude} />
+      <Navbar
+        
+      />
+      <Form
+        lat={userLocation.latitude}
+        long={userLocation.longitude}
+      />
+      {/* <Map /> */}
+      {/* <Map lat={userLocation.coordinates.latitude} long={userLocation.coordinates.longitude} /> */}
     </div>
   );
 }

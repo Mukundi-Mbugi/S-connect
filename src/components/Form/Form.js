@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Form.css";
+import Map from "../Map";
 
 function Form({ lat, long }) {
   const [formData, setFormData] = useState({
@@ -8,21 +9,37 @@ function Form({ lat, long }) {
     mobile: "",
     email: "",
     image: "",
-    latitude: { lat },
-    longitude: { long },
+    latitude: lat ,
+    longitude: long ,
+    
   });
+  const [newFormData, setNewFormData]=useState([])
+  
 
   function handleChange(event) {
-    const name = event.target.name;
-    const value = event.target.value;
-    setFormData({ ...formData, [name]: value });
+    const {name,value} = event.target;
+    setFormData({
+      ...formData,
+      [name]:value
+
+    })
+    
   }
   function handleSubmit(event) {
     event.preventDefault();
+    const newFormData={
+      ...formData,
+      latitude:lat,
+      longitude:long
+    }
+    setNewFormData(newFormData)
+    console.log(newFormData);
   }
-  console.log(formData);
+ 
+  
 
   return (
+    <>
     <div className="form">
       <form onSubmit={handleSubmit} className="form-control">
         <div className="firstname">
@@ -32,7 +49,7 @@ function Form({ lat, long }) {
             name="firstName"
             onChange={handleChange}
             value={formData.firstName}
-          />
+            placeholder="John" />
         </div>
 
         <div className="lastname">
@@ -42,7 +59,7 @@ function Form({ lat, long }) {
             name="lastName"
             onChange={handleChange}
             value={formData.lastName}
-          />
+            placeholder="Doe" />
         </div>
 
         <div className="mobile">
@@ -52,7 +69,7 @@ function Form({ lat, long }) {
             name="mobile"
             onChange={handleChange}
             value={formData.mobile}
-          />
+            placeholder="07123456789" />
         </div>
 
         <div className="email">
@@ -62,21 +79,23 @@ function Form({ lat, long }) {
             name="email"
             onChange={handleChange}
             value={formData.email}
-          />
+            placeholder="example@gmail.com" />
         </div>
 
         <div className="avatar">
           <label>Avatar</label>
           <input
-            type="file"
+            type="link"
             name="image"
             onChange={handleChange}
             value={formData.image}
-          />
+          placeholder="paste image Url" />
         </div>
         <button>Submit</button>
       </form>
     </div>
+    <Map lat={lat} long={long} studentData={formData}/>
+    </>
   );
 }
 

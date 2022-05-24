@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
-    background-color: rgb(234, 234, 234);
+    background-color: #e4c3f7;
 }
 
 .body{
@@ -14,12 +14,11 @@
     display: flex;
     height: auto;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center; 
+    background-color: #e0aaff; 
 }
 
 .leaflet-container{
     width: 100vw;
-    height: 50vh;
-    
+    height: 100vh;
 }
