@@ -4,6 +4,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: auto;
     align-items: center;
     text-align: start;
@@ -23,21 +24,26 @@
 .form-control input{
     width: 80%;
     border: 1px solid;
+    border-radius: 5px;
+    padding: 3px;
+    margin-inline: 4px;
 }
-.form-control button{
-    margin-top: 5px;
-    padding: 2px 5px;
-    font-size: 16px;
+.button{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 80%;
+    
+}
+.button button{
+    width: 100%;
     border: none;
     background-color: blueviolet;
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 5px;
+    padding: 2px 5px;
+    font-size: 16px;
 }
 
-.form-control button:focus{
-    border: none;
-    color: purple;
-}

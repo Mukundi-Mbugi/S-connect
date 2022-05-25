@@ -109,7 +109,9 @@ function Form({ lat, long }) {
             value={formData.image}
           placeholder="paste image Url" />
         </div>
+        <div className="button">
         <button>Submit</button>
+        </div>
       </form>
     </div>
     <Map students={students}/>
