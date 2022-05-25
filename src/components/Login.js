@@ -16,11 +16,11 @@ function Login() {
   const [hasAccount, setHasAccount] = useState(false);
   const [user, setUser] = useState({})
 
-  onAuthStateChanged(auth, (currentUser)=>{
-      setUser(currentUser)
-  })
+  // onAuthStateChanged(auth, (currentUser)=>{
+  //     setUser(currentUser)
+  // })
 
-  const handleSignup = async (email, password) => {
+  const handleSignup = async () => {
     try {
       const user = await createUserWithEmailAndPassword(auth, email, password);
       console.log(user);
@@ -31,7 +31,7 @@ function Login() {
   const handleLogout = async()=> {
     await signOut(auth)
   }
-  const handleLogin = async(email, password)=>{
+  const handleLogin = async()=>{
       try {
           const user = await signInWithEmailAndPassword(auth,email,password)
           console.log(user);
@@ -68,7 +68,7 @@ function Login() {
       <div className="classbtn">
         {hasAccount ? (
           <>
-            <button onClick={()=>handleLogin(email,password)}>Sign in</button>
+            <button onClick={handleLogin}>Sign in</button>
             <p>
               Don't have an account ?{" "}
               <span onClick={() => setHasAccount(!hasAccount)}>Sign Up</span>
@@ -76,7 +76,7 @@ function Login() {
           </>
         ) : (
           <>
-            <button onClick={() => handleSignup(email, password)}>
+            <button onClick={handleSignup}>
               Sign up
             </button>
             <p>

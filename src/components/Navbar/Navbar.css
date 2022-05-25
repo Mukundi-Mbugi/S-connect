@@ -23,7 +23,15 @@ font-family: 'Nunito Sans', sans-serif;
 .navbar ul a{
     text-decoration: none;
     margin-left: 10px;
-    color: blueviolet;
-    font-weight: 400;
+    color: #240046;
+    font-weight: 600;
+    font-size: 16px;
+    
+}
+#connect{
+    color: #FF5C00;
+}
+a:focus{
+    background-color: antiquewhite;
     
 }

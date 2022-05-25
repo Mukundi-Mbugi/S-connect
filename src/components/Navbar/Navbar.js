@@ -11,13 +11,13 @@ function Navbar() {
           </a>
         </li>
         <li>
-          <a href="/" target="_blank">
-            contact
+          <a id="connect" href="/" target="_blank">
+            Connect
           </a>
         </li>
         <li>
           <a href="/" target="_blank">
-            about
+            About
           </a>
         </li>
       </ul>

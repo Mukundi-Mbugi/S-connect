@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Form from "./Form/Form";
+import Home from "./Home";
 import Login from "./Login";
 import Navbar from "./Navbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -32,9 +34,15 @@ function App() {
 
   return (
     <div>
+      <BrowserRouter>
+      
       <Navbar />
-      <Login />
-      <Form lat={userLocation.latitude} long={userLocation.longitude} />
+      <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/Home" element={<Home />} />
+      <Route path="/Form" element={<Form lat={userLocation.latitude} long={userLocation.longitude} />} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

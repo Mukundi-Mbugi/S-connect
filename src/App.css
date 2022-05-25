@@ -90,3 +90,19 @@
     font-weight: 200;
     color: rgb(36, 122, 203);
 }
+.quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #3c096c;
+    color: rgb(255, 191, 0);
+    
+}
+.quote p h5 {
+    text-align: center;
+}
+.quote h5{
+    color: white;
+}
