@@ -3,47 +3,49 @@
 .form{
     text-align: center;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     height: auto;
     align-items: center;
-    text-align: start;
-    margin: 10px;
+    padding: 20px;
+    background-image: url(./students.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 .form label{
     color: blueviolet;
     display: block;
-    margin: 2px;
-    font-size: 13px;
+     font-size: 16px;
     margin-bottom: 0;
     padding-bottom: 0;
+    text-align: start;
+    padding-top: 8px;
 }
 
 
-.form-control input{
-    width: 80%;
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 3px;
-    margin-inline: 4px;
-}
-.button{
-    display: flex;    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.form-control {
+    box-shadow: 5px 10px black;
     
 }
+
+.form input{
+    width: 120%;
+    padding: 5px 8px;
+}
 .button button{
-    width: 100%;
+    width: 120%;
     border: none;
     background-color: blueviolet;
     color: white;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 5px;
-    padding: 2px 5px;
+    margin-top: 10px;
+    width: 120%;
+    padding: 5px 8px;
     font-size: 16px;
+    text-align: center;
 }
 

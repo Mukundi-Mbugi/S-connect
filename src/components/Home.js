@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Navbar from "./Navbar/Navbar";
 
 function Home() {
   const [quote, setQuote] = useState("");
@@ -15,12 +16,14 @@ function Home() {
   }, []);
   console.log(quote);
   return (
+      <>
+      <Navbar />
     <div className="homediv">
       <div className="intro">
         <p>Connect with the rest of the students Worldwide</p>
         <p>
           This is S-connect. We help you connect with other students
-          across the globe from your house. <br />It’s that simple! All you have to do is to fill the form below and connect with other students in your area
+          across the globe from your house. <br />It’s that simple! <br /> All you have to do is to fill the form below and connect with other students in your area
         </p>
       </div>
       <div className="quote">
@@ -28,6 +31,7 @@ function Home() {
         <h5>{quote.author}</h5>
       </div>
     </div>
+      </>
   );
 }
 

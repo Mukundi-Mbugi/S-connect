@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Form from "./Form/Form";
 import Home from "./Home";
 import Login from "./Login";
-import Navbar from "./Navbar/Navbar";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -36,7 +36,7 @@ function App() {
     <div>
       <BrowserRouter>
       
-      <Navbar />
+      
       <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/Home" element={<Home />} />

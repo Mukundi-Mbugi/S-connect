@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Form.css";
 import Map from "../Map";
+import Navbar from "../Navbar/Navbar";
 
 function Form({ lat, long }) {
   const [students, setStudents] = useState([])
@@ -58,6 +59,7 @@ function Form({ lat, long }) {
 
   return (
     <>
+    <Navbar />
     <div className="form">
       <form onSubmit={handleSubmit} className="form-control">
         <div className="firstname">
