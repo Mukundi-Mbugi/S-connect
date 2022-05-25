@@ -20,7 +20,7 @@
 
 .leaflet-container{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
 }
 
 .popup img{
@@ -42,7 +42,7 @@
     justify-content: center;
     align-items: center;
     background-color: #fffefe;
-    height: fit-content;
+    height: auto;
 }
 .homeImage{
     display: flex;
@@ -50,32 +50,38 @@
     justify-content: center;
 }
 .homeImage img{
-    height: 20%;
+    height: auto;
     width: 50%;
 }
 .classbtn{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 8px;
+    width: 100%;
     
 }
 .classbtn button{
     background-color: blueviolet;
     color: white;
     border: none;
-    border-radius: 4px;
-    box-shadow: 5px 3px 4px 5px;
-    padding: 3px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 5px;
     font-weight: 700;
     font-size: 14px;
     cursor: pointer;
     margin-top: 4px;
+    margin-bottom: 5px;
+    width: 30%;
 }
 .home input{
     border-radius: 5px;
     border: solid 1px;
     padding: 3px;
     margin-inline: 4px;
+    margin-top: 8px;
 }
 .hero{
     margin-bottom: 20px;
@@ -93,8 +99,24 @@
     color: rgb(36, 122, 203);
 }
 .homediv{
-    background-color: #3c096c;
+    background-color: #240046;
     color: white;
+    /* display: flex;
+    justify-content: space-evenly; */
+    margin-top: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    height: 100vh;
+}
+.homediv1{
+    background-color: #240046;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    
 }
 .quote{
     display: flex;
@@ -102,13 +124,76 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
-   
-    color: rgb(255, 191, 0);
+    background-color: rgb(45, 40, 50);
+    color: rgb(255, 255, 255);
+    width: 40%;
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: 8px;
+    border: #ffffff solid 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
 .quote p h5 {
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .quote h5{
-    color: white;
+    color: rgb(241, 141, 0);
 }
+.classbtn span{
+    color: blueviolet;
+    cursor: pointer;
+    font-weight: 700;
+}
+.error{
+    color: red;
+    font-size: 8px;
+    text-align: center;
+    align-items: center;
+}
+.sign_form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connect{
+    font-size: 30px;
+    font-weight: 700;
+    display: block;
+    text-align: left;
+    color: #eeab1c;
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+
+.description, .simple{
+    display: block;
+    text-align: left;
+}
+.ratings{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 10px;
+}
+.ratings div{
+    border: #eeab1c solid 2px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 6px;
+}
+.leaflet-popup-content-wrapper {
+    background-color: #240046;
+    color: white;
+    line-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+.leaflet-popup-tip-container {
+    color: #240046;
+}
+

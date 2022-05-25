@@ -62,6 +62,7 @@ function Form({ lat, long }) {
     <Navbar />
     <div className="form">
       <form onSubmit={handleSubmit} className="form-control">
+        <h3>Connect with millions <br /> of students globaly!</h3>
         <div className="firstname">
           <label>First Name</label>
           <input

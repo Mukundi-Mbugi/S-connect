@@ -12,7 +12,8 @@ import {
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [signupError, setSignupError] = useState("");
+  const [loginError, setLoginError] = useState("");
   const [hasAccount, setHasAccount] = useState(false);
   const [user, setUser] = useState({})
 
@@ -25,7 +26,7 @@ function Login() {
       const user = await createUserWithEmailAndPassword(auth, email, password);
       console.log(user);
     } catch (error) {
-      console.log(error.message);
+      setSignupError(error.message);
     }
   };
   const handleLogout = async()=> {
@@ -36,7 +37,7 @@ function Login() {
           const user = await signInWithEmailAndPassword(auth,email,password)
           console.log(user);
       } catch (error) {
-          console.log(error.message);          
+          setLoginError(error.message);          
       }     
   }
   return (
@@ -46,7 +47,7 @@ function Login() {
         <p>bringing students together</p>
       </div>
 
-      <div>
+      <div className="sign_form">
         <input
           type="email"
           placeholder="your email address"
@@ -55,7 +56,7 @@ function Login() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        {/* <p className="error">{error}</p> */}
+        <p className="error">{signupError}</p>
         <input
           type="password"
           placeholder="Enter password"
@@ -63,13 +64,13 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        {/* <p className="error">{error}</p> */}
+        <p className="error">{loginError}</p>
       </div>
       <div className="classbtn">
         {hasAccount ? (
           <>
             <button onClick={handleLogin}>Sign in</button>
-            <p>
+            <p id="sign">
               Don't have an account ?{" "}
               <span onClick={() => setHasAccount(!hasAccount)}>Sign Up</span>
             </p>

@@ -9,6 +9,7 @@ font-family: 'Nunito Sans', sans-serif;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    position: sticky;
 }
 .navbar ul{
     font-family: 'Nunito Sans', sans-serif;
@@ -35,3 +36,4 @@ a:focus{
     background-color: antiquewhite;
     
 }
+

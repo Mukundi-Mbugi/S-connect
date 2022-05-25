@@ -4,7 +4,7 @@
     text-align: center;
     display: flex;
     /* flex-direction: column; */
-    justify-content: center;
+    justify-content: flex-end;
     height: auto;
     align-items: center;
     padding: 20px;
@@ -18,17 +18,26 @@
 .form label{
     color: blueviolet;
     display: block;
-     font-size: 16px;
+    font-size: 16px;
     margin-bottom: 0;
     padding-bottom: 0;
     text-align: start;
     padding-top: 8px;
+    font-weight: 500;
 }
 
 
 .form-control {
-    box-shadow: 5px 10px black;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    
+}
+.form-control h3{
+    color: red;
+    font-size: 22px;
 }
 
 .form input{

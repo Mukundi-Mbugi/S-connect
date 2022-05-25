@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Form from "./Form/Form";
-import Home from "./Home";
+import Home from "./Home/Home";
 import Login from "./Login";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
