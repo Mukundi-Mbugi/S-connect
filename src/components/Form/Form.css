@@ -1,60 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&family=Nunito:wght@200;400;500;600;700;800&display=swap");
 
-.form{
-    text-align: center;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: flex-end;
-    height: auto;
-    align-items: center;
-    padding: 20px;
-    background-image: url(./students.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    
+.form {
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-end;
+  height: auto;
+  align-items: center;
+  padding: 20px;
+  background-image: url(./students.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.form label{
-    color: blueviolet;
-    display: block;
-    font-size: 16px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    text-align: start;
-    padding-top: 8px;
-    font-weight: 500;
+.form label {
+  color: blueviolet;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: start;
+  padding-top: 8px;
+  font-weight: 500;
 }
-
 
 .form-control {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-right: 5rem;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 5rem;
 }
-.form-control h3{
-    color: red;
-    font-size: 22px;
+.form-control h3 {
+  color: red;
+  font-size: 22px;
 }
 
-.form input{
-    width: 120%;
-    padding: 5px 8px;
+.form input {
+  width: 120%;
+  padding: 5px 8px;
 }
-.button button{
-    width: 120%;
-    border: none;
-    background-color: blueviolet;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 120%;
-    padding: 5px 8px;
-    font-size: 16px;
-    text-align: center;
+.button button {
+  width: 120%;
+  border: none;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 120%;
+  padding: 5px 8px;
+  font-size: 16px;
+  text-align: center;
 }
-

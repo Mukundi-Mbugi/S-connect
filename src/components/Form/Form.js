@@ -3,7 +3,6 @@ import "./Form.css";
 import Map from "../Map";
 import Navbar from "../Navbar/Navbar";
 
-
 function Form({ lat, long }) {
   const [students, setStudents] = useState([]);
   const [formData, setFormData] = useState({
@@ -16,7 +15,6 @@ function Form({ lat, long }) {
     longitude: long,
   });
   const [newFormData, setNewFormData] = useState([]);
- 
 
   useEffect(() => {
     fetch("http://localhost:3000/students")

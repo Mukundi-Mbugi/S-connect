@@ -1,58 +1,58 @@
-.quote{
-    background-image: url(./students_celebrate.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    justify-content: space-evenly;
-    display: flex;
-    width: 80%;
+.quote {
+  background-image: url(./students_celebrate.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: space-evenly;
+  display: flex;
+  width: 80%;
 }
 
-.start_btn{
-    background-color: rgb(195, 100, 5);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    padding: 10px 20px;
-    font-weight: 400;
-    font-size: 16px;
-    cursor: pointer;
-    width: 8rem;
-    margin-bottom: 10px;
+.start_btn {
+  background-color: rgb(195, 100, 5);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  cursor: pointer;
+  width: 8rem;
+  margin-bottom: 10px;
 }
-.start_btn:hover{
-    background-color: rgb(252, 172, 0);
+.start_btn:hover {
+  background-color: rgb(252, 172, 0);
 }
-.homecol2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 50%;
+.homecol2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
 }
 @media (max-width: 600px) {
-    .homediv .homediv1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .quote{
-        width: 100%;
-        margin-bottom: 10px;
-        height: 100%;
-        padding: 5px;
-    }
-    .intro{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        margin-left: 10px;
-    }
-    .ratings{
-        display: flex;
-        flex-direction: column;
-    }
+  .homediv .homediv1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  .quote {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 100%;
+    padding: 5px;
+  }
+  .intro {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .ratings {
+    display: flex;
+    flex-direction: column;
+  }
+}

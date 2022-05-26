@@ -5,9 +5,7 @@ import Login from "./Login";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
 function App() {
-
   const [userLocation, setUserLocation] = useState({
     latitude: "",
     longitude: "",
@@ -35,13 +33,16 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-      
-      
-      <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/Home" element={<Home />} />
-      <Route path="/Form" element={<Form lat={userLocation.latitude} long={userLocation.longitude} />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/Home" element={<Home />} />
+          <Route
+            path="/Form"
+            element={
+              <Form lat={userLocation.latitude} long={userLocation.longitude} />
+            }
+          />
+        </Routes>
       </BrowserRouter>
     </div>
   );

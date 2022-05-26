@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import image from "../virtual-intro-classroom-blog-header.png";
-import {auth} from "../firebase-config";
+import { auth } from "../firebase-config";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
-  
 } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -15,10 +13,7 @@ function Login() {
   const [signupError, setSignupError] = useState("");
   const [loginError, setLoginError] = useState("");
   const [hasAccount, setHasAccount] = useState(false);
-  const [user, setUser] = useState({})
-  const navigate = useNavigate()
-
-  
+  const navigate = useNavigate();
 
   const handleSignup = async () => {
     try {
@@ -29,14 +24,14 @@ function Login() {
     }
   };
 
-  const handleLogin = async()=>{
-      try {
-          const user = await signInWithEmailAndPassword(auth,email,password)
-          navigate("/Home");;
-      } catch (error) {
-          setLoginError(error.message);          
-      }     
-  }
+  const handleLogin = async () => {
+    try {
+      const user = await signInWithEmailAndPassword(auth, email, password);
+      navigate("/Home");
+    } catch (error) {
+      setLoginError(error.message);
+    }
+  };
   return (
     <div className="home">
       <div className="hero">
@@ -46,26 +41,26 @@ function Login() {
 
       <div className="form_div">
         <div className="sign_form">
-        <input
-          type="email"
-          placeholder="your email address"
-          autoFocus
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        
-        <input
-          type="password"
-          placeholder="Enter password"
-          required
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          <input
+            type="email"
+            placeholder="your email address"
+            autoFocus
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+
+          <input
+            type="password"
+            placeholder="Enter password"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
         <div className="error_div">
-        <p className="error">{loginError}</p>
-        <p className="error">{signupError}</p>
+          <p className="error">{loginError}</p>
+          <p className="error">{signupError}</p>
         </div>
       </div>
       <div className="classbtn">
@@ -79,9 +74,7 @@ function Login() {
           </>
         ) : (
           <>
-            <button onClick={handleSignup}>
-              Sign up
-            </button>
+            <button onClick={handleSignup}>Sign up</button>
             <p>
               Have an account ?{" "}
               <span onClick={() => setHasAccount(!hasAccount)}>Sign in</span>
