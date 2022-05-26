@@ -107,7 +107,7 @@
     margin-top: 1rem;
     padding-top: 2rem;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
 }
 .homediv1{
     background-color: #240046;
@@ -135,12 +135,14 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
-.quote p h5 {
+.quote p{
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .quote h5{
     color: rgb(241, 141, 0);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .classbtn span{
     color: blueviolet;

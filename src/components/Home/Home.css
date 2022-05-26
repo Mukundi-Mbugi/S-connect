@@ -1,6 +1,7 @@
 .quote{
-    background-image: url(./students_happy.png);
+    background-image: url(./students_celebrate.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     justify-content: space-evenly;
     display: flex;
@@ -18,7 +19,10 @@
     font-size: 16px;
     cursor: pointer;
     width: 8rem;
-    
+    margin-bottom: 10px;
+}
+.start_btn:hover{
+    background-color: rgb(252, 172, 0);
 }
 .homecol2{
     display: flex;
@@ -35,7 +39,7 @@
     }
     .quote{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         height: 100%;
         padding: 5px;
     }
