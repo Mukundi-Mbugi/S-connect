@@ -51,14 +51,28 @@ a:focus{
 }
 .navbar{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 1rem;
 }
-/* .logout_btn{
+#logo{
+    height: 10vh;
+    width: 10vh;
+}
+.logo{
+    width: 80%;
     display: flex;
-    justify-content: flex-end;
-    border: solid 2px;
-    width: 100%;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
     align-items: center;
-} */
-
+}
+@media (max-width: 600px) {
+    #logo{
+        height: 5vh;
+        width: 5vh;
+        margin-left: 20px;
+    }
+}

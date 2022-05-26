@@ -4,6 +4,7 @@ import {NavLink} from "react-router-dom"
 import {signOut} from "firebase/auth"
 import {auth} from "../../firebase-config";
 import {useNavigate} from "react-router-dom"
+import logo from "./logo.jpg"
 
 
 function Navbar() {
@@ -36,9 +37,12 @@ function Navbar() {
   
   
   return (
-    <div className="navbar">      
+    <div className="navbar">   
+    <div className="logo">
+        <img id="logo" src={logo} alt="logo" />
+        </div>   
       <div className="nav">
-      <NavLink to="/" exact style={linkStyles} activeStyle={{
+            <NavLink to="/" exact style={linkStyles} activeStyle={{
           background: "darkblue",
           color: "white"
         }}></NavLink>
