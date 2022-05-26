@@ -4,24 +4,26 @@
     background-repeat: no-repeat;
     justify-content: space-evenly;
     display: flex;
+    width: 80%;
 }
 
-/* .start_btn{
-    background-color: blueviolet;
+.start_btn{
+    background-color: rgb(195, 100, 5);
     color: white;
     border: none;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    padding: 5px;
-    font-weight: 700;
-    font-size: 14px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 16px;
     cursor: pointer;
-    margin-top: 15px;
+    width: 8rem;
     
-} */
-/* .quote1{
+}
+.homecol2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-} */
+    justify-content: space-evenly;
+    width: 50%;
+}

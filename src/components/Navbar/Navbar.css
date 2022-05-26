@@ -6,9 +6,9 @@ font-family: 'Nunito Sans', sans-serif;
 }
 .navbar{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 95%;
     position: sticky;
 }
 .navbar ul{
@@ -36,4 +36,29 @@ a:focus{
     background-color: antiquewhite;
     
 }
+.logout_btn button{
+    
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.navbar{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+/* .logout_btn{
+    display: flex;
+    justify-content: flex-end;
+    border: solid 2px;
+    width: 100%;
+    align-items: center;
+} */
 

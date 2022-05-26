@@ -3,7 +3,6 @@ import image from "../virtual-intro-classroom-blog-header.png";
 import {auth} from "../firebase-config";
 import {
   createUserWithEmailAndPassword,
-  signOut,
   signInWithEmailAndPassword,
   
 } from "firebase/auth";
@@ -29,9 +28,7 @@ function Login() {
       setSignupError(error.message);
     }
   };
-  const handleLogout = async()=> {
-    await signOut(auth)
-  }
+
   const handleLogin = async()=>{
       try {
           const user = await signInWithEmailAndPassword(auth,email,password)

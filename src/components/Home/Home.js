@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "./Home.css";
 
 function Home() {
+  const navigate = useNavigate()
   const [quote, setQuote] = useState("");
   useEffect(() => {
     let interval = setInterval(
@@ -55,15 +57,17 @@ function Home() {
               </div>
             </div>
           </div>
-
+          <div className="homecol2">
           <div className="quote">
             <p>"{quote.content}"</p>
             <h5>~{quote.author}</h5>
             <div className="cover"></div>
           </div>
-          {/* <div>
-            <button className="start_btn">Get Started</button>
-          </div> */}
+          <div>
+            <button className="start_btn" onClick={()=>{navigate("/Form")}}>Get Started</button>
+          </div>
+          </div>
+
         </div>
       </div>
     </>
