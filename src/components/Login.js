@@ -6,6 +6,7 @@ import {
   signInWithEmailAndPassword,
   
 } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 
 function Login() {
@@ -15,15 +16,14 @@ function Login() {
   const [loginError, setLoginError] = useState("");
   const [hasAccount, setHasAccount] = useState(false);
   const [user, setUser] = useState({})
+  const navigate = useNavigate()
 
-  // onAuthStateChanged(auth, (currentUser)=>{
-  //     setUser(currentUser)
-  // })
+  
 
   const handleSignup = async () => {
     try {
       const user = await createUserWithEmailAndPassword(auth, email, password);
-      console.log(user);
+      navigate("/Home");
     } catch (error) {
       setSignupError(error.message);
     }
@@ -32,7 +32,7 @@ function Login() {
   const handleLogin = async()=>{
       try {
           const user = await signInWithEmailAndPassword(auth,email,password)
-          console.log(user);
+          navigate("/Home");;
       } catch (error) {
           setLoginError(error.message);          
       }     
@@ -44,16 +44,17 @@ function Login() {
         <p>bringing students together</p>
       </div>
 
-      <div className="sign_form">
+      <div className="form_div">
+        <div className="sign_form">
         <input
           type="email"
           placeholder="your email address"
           autoFocus
-          required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
-        <p className="error">{signupError}</p>
+        
         <input
           type="password"
           placeholder="Enter password"
@@ -61,7 +62,11 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        </div>
+        <div className="error_div">
         <p className="error">{loginError}</p>
+        <p className="error">{signupError}</p>
+        </div>
       </div>
       <div className="classbtn">
         {hasAccount ? (

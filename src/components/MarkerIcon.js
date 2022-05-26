@@ -21,9 +21,8 @@ function MarkerIcon({ students }) {
           <h4>
             {student.firstName} {student.lastName}
           </h4>
-            <p>{student.mobile}</p>
-            <p>{student.email}</p>
-            <button onClick={handleDelete}>Delete</button>
+            <p><a href={`tel:${student.mobile}`}>{student.mobile}</a></p>
+            <p><a href={`mailto:${student.email}`}>{student.email}</a></p>
          </Popup>
         </Marker>
       ))}
