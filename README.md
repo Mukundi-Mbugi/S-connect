@@ -3,6 +3,9 @@
 
 S-connect is an online community of students. Students create accounts fill in their details on a form and are tagged to a map based on where they are located. The reuslt is a map with pin icons representing students. Clicking each icon displays the student details with active links that you can use to contact them. Students can as well see those near them.
 
+## Live Link
+https://students-connect.herokuapp.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
